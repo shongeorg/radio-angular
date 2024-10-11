@@ -1,0 +1,29 @@
+ul.list {
+  height: 50svh;
+  background-color: lightcyan;
+  overflow: auto;
+}
+
+ul.list li.active {
+  background-color: gray;
+}
+
+li {
+  pointer-events: auto;
+  padding: 50px;
+}
+
+.list {
+  position: relative;
+  z-index: 1;
+}
+
+.list li {
+  cursor: pointer;
+  z-index: 2;
+  padding: 8px;
+}
+
+.list li:hover {
+  background-color: lightgray;
+}

@@ -1,0 +1,11 @@
+<ul class="list">
+  <li
+    *ngFor="let station of stations$ | async"
+    [class.active]="
+      (currentStation$ | async)?.stationuuid === station.stationuuid
+    "
+  >
+    {{ station.name }}
+    <button (click)="setActiveStation(station)">click</button>
+  </li>
+</ul>
